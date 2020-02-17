@@ -57,11 +57,19 @@
         print ("{$year} год - простой");
     }
 ?> -->
+<style>
+    p
+    {
+        text-align:justify;
+        font-family:Helvetica;
+        color:red;
+    }
+</style>
 <!-- <?php
-    echo "Hello World. Today is <b>".date("l").".</b> ";
+    echo "<p>01Hello World. Today is <b>".date("l").".</p></b>";
 ?>
-How are you?<br>
-Hello World. Today is <b><?php echo date("l"); ?>.</b> How are you? -->
-<script type="text/javascript">
-document.write("Hello World. Today is " + Date() );
-</script>
+<p>How are you?<hr></p>
+<p>Hello World. Today is <b><?php echo date("l"); ?>.</b><br>How are you?</p> -->
+<!-- <script type="text/javascript">
+document.write("<p>Hello World. Today is " + Date() + "</p>");
+</script> -->
