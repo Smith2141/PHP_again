@@ -1,0 +1,27 @@
+https://forum.vingrad.ru/topic-115459.html
+
+
+Хорошая тема:
+http://algolist.ru/olimp/geo_sol.php#a3
+
+Работа с json:
+https://delay-delo.com/content/rabota-php-c-json-dobavlenie-udalenie-i-obnovlenie-v-fayle
+
+https://snipp.ru/php/json-php#link-kodirovanie
+https://www.php.net/manual/ru/ref.json.php
+
+
+Новые джсоны
+http://10.19.206.50/share/
+
+Работа с джсон:
+https://geojson.org/
+https://www.php.net/manual/ru/ref.json.php
+https://snipp.ru/php/json-php#link-kodirovanie
+https://delay-delo.com/content/rabota-php-c-json-dobavlenie-udalenie-i-obnovlenie-v-fayle
+
+Обработка полигонов:
+http://algolist.ru/olimp/geo_sol.php#a3
+
+Список файлов по FTP
+http://www.softtime.ru/scripts/ftpscaner.php
