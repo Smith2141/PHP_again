@@ -14,3 +14,10 @@ $file_content = file_get_contents($url);
 $dir_to_record = dirname(__FILE__);
 // file_put_contents("$dir_to_record/$current_filename", $file_content);//save file
 ?>
+<!-- TODO:
+-открыть лог, получить крайний event="record" за текущий день;
+-проверка наличия актуального файла, если в логе нет
+или длина меньше найденного->чтение, запись на диск и в лог event="record",
+иначе запись в лог event="unchanged" с указанием длины файла;
+-отправка нового файла по электронке.
+ -->
