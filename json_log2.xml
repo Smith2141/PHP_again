@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<log>
+    <year current_year="2020">
+        <month current_month="02">
+            <day current_day="19">
+                <request event="record" filename="someXml">555</request>
+                <request event="record" filename="someXml">12345</request>
+            </day>
+        </month>
+    </year>
+</log>

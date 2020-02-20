@@ -74,5 +74,5 @@
 document.write("<p>Hello World. Today is " + Date() + "</p>");
 </script> -->
 <?php
-    echo "<h1>Здесь всё закомментировано!!!</h1>";
+    echo "<i>Здесь всё закомментировано, уажите другой файл!</i>";
 ?>
