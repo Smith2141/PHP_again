@@ -3,9 +3,14 @@
     <year current_year="2020">
         <month current_month="02">
             <day current_day="19">
-                <request event="record" filename="someXml">555</request>
-                <request event="record" filename="someXml">12345</request>
+                <request event="record" Content_Length="777" Last_Modified="y1m2d3" ETag="q1" filename="Xml_1"/>
+                <request event="record" Content_Length="888" Last_Modified="y1m3d4" ETag="q2" filename="Xml_2"/>
             </day>
+        </month>
+    </year>
+    <year current_year="2021">
+        <month current_month="02">
+            <day current_day="21"/>
         </month>
     </year>
 </log>
