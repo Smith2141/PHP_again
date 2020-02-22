@@ -16,87 +16,43 @@ class SaveAndLog {
         }
     }
     public function check_the_current_request($ETag) {
-        if (!$this->xml_content->xpath("//year[@current_year='2021']")) {//FIXME:date('Y')
+        $current_year = date('Y');
+        $verifiable_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
+        if (!$verifiable_year) {//FIXME:date('Y')
             echo "<p><u>Дописывание года выполняется:</u></p>";
             $new_year = $this->xml_content->addChild('year');//добавление нового года
-            $new_year->addAttribute('current_year', "2021");//добавление аттрибута нового года ВАЖНО ->
-            $new_month = $new_year->addChild('month');//добавление нового месяца
-            $new_month->addAttribute('current_month', date('m'));
-            $new_day = $new_month->addChild('day');//добавление нового дня
-            $new_day->addAttribute('current_day', date('d'));
-            print_r ($this->xml_content);
-            file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+            $new_year->addAttribute('current_year', date('Y'));//добавление аттрибута нового года ВАЖНО ->
         }
-        $verifiable_month = "//year[@current_year='2021']/month[@current_month='04']";
-        if (!$this->xml_content->xpath($verifiable_month)) {//TODO:Сократить ветви, запись вынести отдельно
+        $current_month = date('Ym');
+        $verifiable_month = $this->xml_content->xpath("//month[@current_month=$current_month]");
+        if (!$verifiable_month) {//TODO:Сократить ветви, запись вынести отдельно
             echo "<p><u>Дописывание месяца выполняется:</u></p>";
-            $new_month = $this->xml_content->xpath("//year[@current_year='2021']")->addChild('month');
-            $new_month->addAttribute('current_month', date('04'));
-            $new_day = $new_month->addChild('day');//добавление нового дня
-            $new_day->addAttribute('current_day', date('d'));
-            print_r ($this->xml_content);
-            file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+            $new_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
+            foreach ($new_year as $year) {
+                if ($verifiable_year) {
+                    $year->addChild('month')->addAttribute('current_month', date('Ym'));
+                }
+            }
         }
-        // $request = $this->xml_content->xpath("//day/request[@filename='Xml_1']");
-        // print_r ($request);
-        // echo '<br>';
-        // print_r($this->xml_content);
-        // $this->open_xml_log();
-        // echo '<br>';
-        // print_r($this->xml_content);
-        // if (((string) $this->xml_content->year[-1]->month[-1])) {
-        //     echo "<p><u>Проверка месяца выполнена</u></p>";
-        //     $new_month = $this->xml_content->year[-1]->addChild('month');//добавление нового года
-        //     $new_month->addAttribute('current_month', "03");//добавление аттрибута нового месяца ВАЖНО ->
-        //     print_r ($this->xml_content);
-        //     file_put_contents($this->log_file, $this->xml_content->asXML());//save file
-        // }
-        // if ($this->xml_content->year[-1]->month[-1]->day[-1]->request['filename']) {
-        //     if ($this->xml_content->year[-1]->month[-1]->day[-1]->request[-1] != $ETag) {//json есть и обновился
-        //         // TODO:Добавить сохранить новый json
-        //         $new_request = $this->xml_content->year[-1]->month[-1]->day[-1]->addChild('request', $ETag);//добавление новой записи
-        //         $new_request->addAttribute('event', 'record');//установка аттрибута записи
-        //     } else {//json есть и НЕ обновился
-        //         $new_request = $this->xml_content->log->year[-1]->month[-1]->day[-1]->addChild('request', $ETag);//добавление новой записи
-        //         $new_request->addAttribute('event', 'unchanged');//установка аттрибута записи
-        //     }
-       // } //else {//json сегодня не скачивался
-            //$new_day = $this->xml_content->year[-1]->month[-1]->addChild('day', date("d"));//добавление нового дня
-            //$new_day->addAttribute('current_day', date("d"));//установка аттрибута нового дня
-        //}
+        $current_day = date('Ymd');
+        $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
+        if (!$verifiable_day) {
+            echo "<p><u>Дописывание дня выполняется:</u></p>";
+            $new_month = $this->xml_content->xpath("//month[@current_month=$current_month]");
+            foreach ($new_month as $month) {
+                if ($verifiable_month) {
+                    $month->addChild('day')->addAttribute('current_day', date('Ymd'));
+                }
+            }
+        }
+        print_r ($this->xml_content);
+        file_put_contents($this->log_file, $this->xml_content->asXML());//save file
     }
 }
+
 $ETag = '5e43f25b-1c44';
 $log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
 $test_obj = new SaveAndLog($log_path);
 $test_obj->open_xml_log();
 $test_obj->check_the_current_request($ETag);
-
 ?>
-
-<!-- <?php
-$current_filename = 'json_log.xml';
-if (file_exists($current_filename)) {
-    $xml_content = simplexml_load_file($current_filename);
- 
-    print_r($xml_content);
-} else {
-    exit("Не удалось открыть файл $current_filename.");
-}
-echo '<hr>';
-echo 'Год: ' . $xml_content->year['current_year'] . '<br>';
-echo 'Месяц: ' . $xml_content->year->month['current_month'] . '<br>';
-echo 'День: ' . $xml_content->year->month->day['current_day'] . '<br>';
-echo 'Событие: ' . $xml_content->year->month->day->request['event'] . '<br>';
-echo 'Файл: ' . $xml_content->year->month->day->request['filename'] . '<br>';
-echo 'Длина: ' . $xml_content->year->month->day->request . '<br>';
-$xml_content->year->month->day->request[-1] = 555;
-// $new_day = $xml_content->year->month->addChild('day', date("d"));
-$new_day = $xml_content->year[-1]->month[-1]->addChild('day', date("d"));//добавление нового дня
-$new_day->addAttribute('current_day', date("d"));//установка аттрибута нового дня
-// $xml_content->year->month->day->addChild('request', date("Y"));
-// print_r($xml_content);
-$current_filename = 'json_log2.xml';
-$dir_to_record = dirname(__FILE__);
-file_put_contents("$dir_to_record/$current_filename", $xml_content->asXML());//save file
-?> -->
