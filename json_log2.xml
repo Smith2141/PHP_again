@@ -2,7 +2,8 @@
 <log>
     <year current_year="2020">
         <month current_month="202002">
-            <day current_day="20200224"/>
+            <day current_day="20200224">
+            <request ETag="qwew"/><request ETag="qwew"/><request ETag="qwew"/><request ETag="qwew"/><request ETag="qwew"/><request ETag="qwew"/></day>
         </month>
     </year>
 </log>

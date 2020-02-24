@@ -19,7 +19,7 @@ class SaveAndLog {
     public function check_the_current_year() {
         $current_year = date('Y');
         $verifiable_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
-        if (!$verifiable_year) {//FIXME:date('Y')
+        if (!$verifiable_year) {
             echo "<p><u>Дописывание года выполняется:</u></p>";
             $new_year = $this->xml_content->addChild('year');//добавление нового года
             $new_year->addAttribute('current_year', date('Y'));//добавление аттрибута нового года ВАЖНО ->
@@ -31,11 +31,10 @@ class SaveAndLog {
         $current_month = date('Ym');
         $verifiable_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
         $verifiable_month = $this->xml_content->xpath("//month[@current_month=$current_month]");
-        if (!$verifiable_month) {//TODO:Сократить ветви, запись вынести отдельно
+        if (!$verifiable_month) {
             echo "<p><u>Дописывание месяца выполняется:</u></p>";
-            $new_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
-            foreach ($new_year as $year) {
-                if ($verifiable_year) {
+            foreach ($verifiable_year as $year) {
+                if ((string) $year['current_year'] == $current_year) {
                     $year->addChild('month')->addAttribute('current_month', date('Ym'));
                     print_r ($this->xml_content);
                 }
@@ -49,14 +48,30 @@ class SaveAndLog {
         $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
         if (!$verifiable_day) {
             echo "<p><u>Дописывание дня выполняется:</u></p>";
-            $new_month = $this->xml_content->xpath("//month[@current_month=$current_month]");
-            foreach ($new_month as $month) {
-                if ($verifiable_month) {
+            foreach ($verifiable_month as $month) {
+                if ((string) $month['current_month'] == $current_month) {
                     $month->addChild('day')->addAttribute('current_day', date('Ymd'));
                     print_r ($this->xml_content);
                     file_put_contents($this->log_file, $this->xml_content->asXML());//save file
-                    return 'current day added';
                 }
+            }
+    
+        }
+    }
+    public function check_the_current_request($ETag) {
+        $ETag1 = $ETag;//FIXME:перевести в число, строка не катит
+        $current_day = date('Ymd');
+        $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
+        $verifiable_request = $this->xml_content->xpath("//request[@ETag=$ETag1]");
+        if (!$verifiable_request) {
+            echo "<p><u>Дописывание запроса выполняется:</u></p>";
+            foreach ($verifiable_day as $day) {
+                if ((string) $day['current_day'] == $current_day) {
+                    $day->addChild('request')->addAttribute('ETag', $ETag1);
+                    print_r ($this->xml_content);
+                    file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+                    // return 'request added';
+                }//TODO:Добавить unchanged
             }
     
         }
@@ -70,10 +85,6 @@ $test_obj = new SaveAndLog($log_path);
 $test_obj->open_xml_log();
 $test_obj->check_the_current_year();
 $test_obj->check_the_current_month();
-$a = $test_obj->check_the_current_day();
-if ($a == 'current day added') {
-    echo '<h1>working</h1>';
-} else {
-    echo '<h1>silent</h1>';
-}
+$test_obj->check_the_current_day();
+$test_obj->check_the_current_request($ETag);
 ?>
