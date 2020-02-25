@@ -62,12 +62,12 @@ class SaveAndLog {
         $ETag1 = $ETag;//FIXME:перевести в число, строка не катит
         $current_day = date('Ymd');
         $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
-        $verifiable_request = $this->xml_content->xpath("//request[@ETag=$ETag1]");
+        $verifiable_request = $this->xml_content->xpath("//request[@ETag=$ETag]");
         if (!$verifiable_request) {
             echo "<p><u>Дописывание запроса выполняется:</u></p>";
             foreach ($verifiable_day as $day) {
                 if ((string) $day['current_day'] == $current_day) {
-                    $day->addChild('request')->addAttribute('ETag', $ETag1);
+                    $day->addChild('request')->addAttribute('ETag', $ETag);
                     print_r ($this->xml_content);
                     file_put_contents($this->log_file, $this->xml_content->asXML());//save file
                     // return 'request added';
@@ -79,7 +79,8 @@ class SaveAndLog {
 
 }
 
-$ETag = '5e43f25b-1c44';
+// $ETag = '5e43f25b-1c44';
+$ETag = '1';
 $log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
 $test_obj = new SaveAndLog($log_path);
 $test_obj->open_xml_log();

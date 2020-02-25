@@ -67,12 +67,15 @@
 </style>
 <!-- <?php
     echo "<p>01Hello World. Today is <b>".date("l").".</p></b>";
-?>
-<p>How are you?<hr></p>
-<p>Hello World. Today is <b><?php echo date("l"); ?>.</b><br>How are you?</p> -->
-<!-- <script type="text/javascript">
+?> -->
+<!-- <p>How are you?<hr></p>
+<p>Hello World. Today is <b><?php echo date("l"); ?>.</b><br>How are you?</p>
+<script type="text/javascript">
 document.write("<p>Hello World. Today is " + Date() + "</p>");
 </script> -->
+<!-- <?php
+    phpinfo();
+    ?> -->
 <?php
     echo "<i>Здесь всё закомментировано, уажите другой файл!</i>";
 ?>
