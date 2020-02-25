@@ -59,11 +59,11 @@ class SaveAndLog {
         }
     }
     public function check_the_current_request($ETag) {
-        $ETag1 = $ETag;//FIXME:перевести в число, строка не катит
         $current_day = date('Ymd');
         $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
-        $verifiable_request = $this->xml_content->xpath("//request[@ETag=$ETag]");
-        if (!$verifiable_request) {
+        $verifiable_day_expr = $this->xml_content->xpath("//day[last()]");
+        $verifiable_request = $this->xml_content->xpath("//request[last()]");
+        if ((string)$verifiable_request[0]['ETag'] != $ETag) {
             echo "<p><u>Дописывание запроса выполняется:</u></p>";
             foreach ($verifiable_day as $day) {
                 if ((string) $day['current_day'] == $current_day) {
@@ -74,13 +74,21 @@ class SaveAndLog {
                 }//TODO:Добавить unchanged
             }
     
+        } else {
+            $verifiable_day_expr = $this->xml_content->xpath("//day[last()]");
+            $verifiable_request = $this->xml_content->xpath("//request[last()]");
+            $verifiable_day_expr[0]->addChild('request');
+            $verifiable_request[0]->addAttribute('ETag', $ETag);
+            $verifiable_request[0]->addAttribute('event', 'unchanged');
+            print_r ($this->xml_content);
+            file_put_contents($this->log_file, $this->xml_content->asXML());//save file
         }
     }
 
 }
 
-// $ETag = '5e43f25b-1c44';
-$ETag = '1';
+$ETag = '5e43f25b-1c44';
+// $ETag = '1';
 $log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
 $test_obj = new SaveAndLog($log_path);
 $test_obj->open_xml_log();
