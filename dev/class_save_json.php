@@ -16,7 +16,7 @@ class SaveAndLog {
             exit("Не удалось открыть файл $this->log_file.");
         }
     }
-    public function check_the_current_year() {
+    public function check_the_current_year() {//TODO: поубирать итерацию из методов
         $current_year = date('Y');
         $verifiable_year = $this->xml_content->xpath("//year[@current_year=$current_year]");
         if (!$verifiable_year) {
@@ -58,42 +58,54 @@ class SaveAndLog {
     
         }
     }
-    public function check_the_current_request($ETag) {
+    public function check_the_current_request($current_filename, $url) {
         $current_day = date('Ymd');
         $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
         $verifiable_day_expr = $this->xml_content->xpath("//day[last()]");
         $verifiable_request = $this->xml_content->xpath("//request[last()]");
-        if ((string)$verifiable_request[0]['ETag'] != $ETag) {
-            echo "<p><u>Дописывание запроса выполняется:</u></p>";
+        $Headers = get_headers($url, 1);//чтение заголовков для проверки наличия файла
+        $ETag = trim($Headers['ETag'], '""');//значение атрибута ETag
+        $ContentLength = $Headers['Content-Length'];//значение атрибута длины файла
+        $LastModified = $Headers['Last-Modified'];//значение атрибута редактирования
+        if (empty($verifiable_request) or $verifiable_request[0]['ETag'] != $ETag) {
+            echo "<p><u>Дописывание запроса record выполняется:</u></p>";
             foreach ($verifiable_day as $day) {
                 if ((string) $day['current_day'] == $current_day) {
-                    $day->addChild('request')->addAttribute('ETag', $ETag);
+                    $file_content = file_get_contents($url);//получить содержимое файла json
+                    $dir_to_record = dirname(__DIR__);//директория запуска скрипта
+                    file_put_contents("./file_input/$current_filename", $file_content);//save json file
+                    //добавление события в лог
+                    $day->addChild('request')->addAttribute('event', 'record');
+                    $verifiable_request = $this->xml_content->xpath("//request[last()]");
+                    $verifiable_request[0]->addAttribute('ETag', $ETag);
+                    $verifiable_request[0]->addAttribute('Content-Length', $ContentLength);
+                    $verifiable_request[0]->addAttribute('Last-Modified', $LastModified);
                     print_r ($this->xml_content);
-                    file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+                    file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
                     // return 'request added';
-                }//TODO:Добавить unchanged
+                }
             }
-    
         } else {
             $verifiable_day_expr = $this->xml_content->xpath("//day[last()]");
-            $verifiable_request = $this->xml_content->xpath("//request[last()]");
+            echo "<p><u>Дописывание запроса unchanged выполняется:</u></p>";
             $verifiable_day_expr[0]->addChild('request');
-            $verifiable_request[0]->addAttribute('ETag', $ETag);
+            $verifiable_request = $this->xml_content->xpath("//request[last()]");
             $verifiable_request[0]->addAttribute('event', 'unchanged');
+            $verifiable_request[0]->addAttribute('ETag', $ETag);
             print_r ($this->xml_content);
-            file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+            file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
         }
     }
 
 }
 
-$ETag = '5e43f25b-1c44';
-// $ETag = '1';
-$log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
-$test_obj = new SaveAndLog($log_path);
-$test_obj->open_xml_log();
-$test_obj->check_the_current_year();
-$test_obj->check_the_current_month();
-$test_obj->check_the_current_day();
-$test_obj->check_the_current_request($ETag);
+// $ETag = '5e43f25b-1c44';
+// // $ETag = '1';
+// $log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
+// $test_obj = new SaveAndLog($log_path);
+// $test_obj->open_xml_log();
+// $test_obj->check_the_current_year();
+// $test_obj->check_the_current_month();
+// $test_obj->check_the_current_day();
+// $test_obj->check_the_current_request($ETag);
 ?>

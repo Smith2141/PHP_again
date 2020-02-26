@@ -2,9 +2,7 @@
 <log>
     <year current_year="2020">
         <month current_month="202002">
-            <day current_day="20200225">
-                <request ETag="5e43f25b-1c44" event="unchanged"/>
-                <request/>
+            <day current_day="20200226">
             </day>
         </month>
     </year>
