@@ -78,11 +78,12 @@ class SaveAndLog {
                     $day->addChild('request')->addAttribute('event', 'record');
                     $verifiable_request = $this->xml_content->xpath("//request[last()]");
                     $verifiable_request[0]->addAttribute('ETag', $ETag);
+                    $verifiable_request[0]->addAttribute('filename', $current_filename);
                     $verifiable_request[0]->addAttribute('Content-Length', $ContentLength);
                     $verifiable_request[0]->addAttribute('Last-Modified', $LastModified);
                     print_r ($this->xml_content);
                     file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
-                    // return 'request added';
+                    return TRUE;
                 }
             }
         } else {
@@ -98,14 +99,4 @@ class SaveAndLog {
     }
 
 }
-
-// $ETag = '5e43f25b-1c44';
-// // $ETag = '1';
-// $log_path = '../json_log2.xml';//FIXME:Путь к лог-файлу 
-// $test_obj = new SaveAndLog($log_path);
-// $test_obj->open_xml_log();
-// $test_obj->check_the_current_year();
-// $test_obj->check_the_current_month();
-// $test_obj->check_the_current_day();
-// $test_obj->check_the_current_request($ETag);
 ?>
