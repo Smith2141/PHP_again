@@ -73,9 +73,9 @@
 <script type="text/javascript">
 document.write("<p>Hello World. Today is " + Date() + "</p>");
 </script> -->
-<!-- <?php
-    phpinfo();
-    ?> -->
 <?php
+    phpinfo();
+    ?>
+<!-- <?php
     echo "<i>Здесь всё закомментировано, уажите другой файл!</i>";
-?>
+?> -->
