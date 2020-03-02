@@ -73,9 +73,14 @@
 <script type="text/javascript">
 document.write("<p>Hello World. Today is " + Date() + "</p>");
 </script> -->
-<?php
-    phpinfo();
-    ?>
 <!-- <?php
     echo "<i>Здесь всё закомментировано, уажите другой файл!</i>";
+    ?> -->
+<!-- <?php
+if (!is_file('log/json_log.xml')) {
+    mkdir('log/json_log.xml', 0777, true);
+}
 ?> -->
+<?php
+    phpinfo();
+?>

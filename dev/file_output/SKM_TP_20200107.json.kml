@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="SKM_TP_20200107" id="SKM_TP_20200107">
+	<SimpleField name="id" type="int"></SimpleField>
+	<SimpleField name="datemin" type="string"></SimpleField>
+	<SimpleField name="date" type="string"></SimpleField>
+	<SimpleField name="lon" type="float"></SimpleField>
+	<SimpleField name="lat" type="float"></SimpleField>
+</Schema>
+<Folder><name>SKM_TP_20200107</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295012</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">19.3721071109888</SimpleData>
+		<SimpleData name="lat">45.2534355227805</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>19.36089512,45.25683981 19.37909217,45.26043994 19.38331801,45.25003618 19.36512953,45.24642653 19.36089512,45.25683981</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295019</SimpleData>
+		<SimpleData name="datemin">2020/01/07 04:51:56</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">108.961681753112</SimpleData>
+		<SimpleData name="lat">50.4113009504879</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>108.94408187,50.41388274 108.97206643,50.42059185 108.97925607,50.40871856 108.95134195,50.40200564 108.94408187,50.41388274</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295016</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">19.9388771866293</SimpleData>
+		<SimpleData name="lat">45.3095280420391</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>19.92833587,45.31292377 19.94542476,45.31625974 19.94942647,45.30614055 19.93232568,45.30279221 19.92833587,45.31292377</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295018</SimpleData>
+		<SimpleData name="datemin">2020/01/07 03:08:52</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">110.418549795216</SimpleData>
+		<SimpleData name="lat">52.4456006773254</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>110.40123991,52.43428602 110.40336609,52.44659805 110.40552463,52.45890723 110.43603448,52.45684446 110.43369865,52.44456863 110.43147704,52.43228329 110.40123991,52.43428602</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295017</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">20.974554496756</SimpleData>
+		<SimpleData name="lat">44.5996039729094</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>20.96485935,44.60305088 20.98058497,44.6059739 20.98424784,44.59616023 20.96853031,44.59323055 20.96485935,44.60305088</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295015</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">19.8144462038462</SimpleData>
+		<SimpleData name="lat">45.2961232385919</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>19.80377556,45.29952173 19.82106805,45.30290919 19.82511544,45.29272909 19.80783152,45.28933306 19.80377556,45.29952173</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295021</SimpleData>
+		<SimpleData name="datemin">2020/01/07 04:51:56</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">110.407314533148</SimpleData>
+		<SimpleData name="lat">52.4407044138694</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>110.412196318464,52.4468532579883 110.41926462,52.44835761 110.42575186,52.43791482 110.40265232,52.43298632 110.40178638402,52.4344730844652 110.39509954,52.43301119 110.3892081,52.44359674 110.41123839,52.44839859 110.412196318464,52.4468532579883</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295024</SimpleData>
+		<SimpleData name="datemin">2020/01/07 06:34:27</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">95.6554892833728</SimpleData>
+		<SimpleData name="lat">56.1975162829809</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>95.64464149,56.20122535 95.66293106,56.20326144 95.66633648,56.19380468 95.64804501,56.19177335 95.64464149,56.20122535</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295013</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">19.721699820962</SimpleData>
+		<SimpleData name="lat">45.2389680337892</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>19.70212343,45.24068758 19.71970112,45.24409889 19.73723917,45.2474997 19.74127371,45.23725584 19.72373471,45.23384456 19.706187,45.23042849 19.70212343,45.24068758</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295020</SimpleData>
+		<SimpleData name="datemin">2020/01/07 04:51:56</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">111.222701764633</SimpleData>
+		<SimpleData name="lat">52.5194997321942</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>111.20969954,52.52246121 111.23008912,52.52673559 111.23571977,52.51654978 111.21530164,52.51225922 111.20969954,52.52246121</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295010</SimpleData>
+		<SimpleData name="datemin">2020/01/06 18:35:29</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">42.9667386435499</SimpleData>
+		<SimpleData name="lat">43.919875962935</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>42.94263679,43.92090805 42.96434524,43.92556315 42.98569902,43.930137 42.99072721,43.91881954 42.969599,43.914279 42.94793909,43.90961915 42.94263679,43.92090805</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295011</SimpleData>
+		<SimpleData name="datemin">2020/01/06 19:20:52</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">93.5250866768306</SimpleData>
+		<SimpleData name="lat">55.1765860779894</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>93.50734719,55.17129827 93.50969424,55.18389014 93.54256264,55.18191504 93.54077142,55.16930984 93.50734719,55.17129827</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295007</SimpleData>
+		<SimpleData name="datemin">2020/01/06 18:35:29</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">43.052332903454</SimpleData>
+		<SimpleData name="lat">43.7915332510177</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>43.0603635546573,43.7895296844481 43.06365636,43.7825459 43.04202188,43.77795143 43.0394136624415,43.7849745966704 43.03518787,43.78405549 43.02962384,43.79525588 43.04993222,43.79965994 43.07033669,43.80408016 43.07544578,43.79280552 43.0603635546573,43.7895296844481</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295009</SimpleData>
+		<SimpleData name="datemin">2020/01/06 18:35:29</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">43.0057680967682</SimpleData>
+		<SimpleData name="lat">43.8212158083209</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>42.99276961,43.82461463 43.01366711,43.82910732 43.01864771,43.81777273 42.99801765,43.81332286 42.99276961,43.82461463</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295006</SimpleData>
+		<SimpleData name="datemin">2020/01/06 15:16:13</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">93.5038621566547</SimpleData>
+		<SimpleData name="lat">55.1725661248559</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>93.48615311,55.17447161 93.50166555,55.1769607 93.51724292,55.17945934 93.52162105,55.17067643 93.50596564,55.16816162 93.49043226,55.16566777 93.48615311,55.17447161</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295026</SimpleData>
+		<SimpleData name="datemin">2020/01/07 09:41:00</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">20.9824943050925</SimpleData>
+		<SimpleData name="lat">44.5988684281643</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>20.97231899,44.59079244 20.97551537,44.60010052 20.97872078,44.6094086 20.9926759,44.60694716 20.98946762,44.59763527 20.986266,44.58832243 20.97231899,44.59079244</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295014</SimpleData>
+		<SimpleData name="datemin">2020/01/06 20:14:24</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">19.7699484216703</SimpleData>
+		<SimpleData name="lat">45.2520118301586</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>19.75067213,45.26113821 19.76814678,45.26450945 19.77221012,45.25428104 19.78963041,45.25764942 19.79368758,45.24742959 19.7762668,45.24405073 19.75879646,45.24065948 19.75474405,45.25090122 19.75067213,45.26113821</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295023</SimpleData>
+		<SimpleData name="datemin">2020/01/07 06:23:41</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">71.4640943713463</SimpleData>
+		<SimpleData name="lat">50.7930897674855</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>71.4480493,50.78466542 71.45161629,50.79355049 71.45518899,50.80243461 71.4694445,50.80010479 71.48370764,50.79777114 71.48012161,50.78888321 71.46586037,50.79121971 71.46228766,50.78233273 71.4480493,50.78466542</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#SKM_TP_20200107">
+		<SimpleData name="id">2295025</SimpleData>
+		<SimpleData name="datemin">2020/01/07 08:02:55</SimpleData>
+		<SimpleData name="date">2020/01/07</SimpleData>
+		<SimpleData name="lon">46.4697026238368</SimpleData>
+		<SimpleData name="lat">42.0375271121579</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>46.4612174,42.03392289 46.46359492,42.04413726 46.47744191,42.04146666 46.47661006,42.03094773 46.4612174,42.03392289</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

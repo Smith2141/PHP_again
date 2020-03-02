@@ -72,8 +72,10 @@ class SaveAndLog {
             foreach ($verifiable_day as $day) {
                 if ((string) $day['current_day'] == $current_day) {
                     $file_content = file_get_contents($url);//получить содержимое файла json
-                    $dir_to_record = dirname(__DIR__);//директория запуска скрипта
-                    file_put_contents("./file_input/$current_filename", $file_content);//save json file
+                    if (!is_dir('in')) {//проверка и создание директории для json
+                        mkdir('in', 0777, true);
+                    }
+                    file_put_contents("in/$current_filename", $file_content);//save json file
                     //добавление события в лог
                     $day->addChild('request')->addAttribute('event', 'record');
                     $verifiable_request = $this->xml_content->xpath("//request[last()]");
