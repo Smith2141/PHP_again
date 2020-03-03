@@ -97,6 +97,7 @@ class SaveAndLog {
             $verifiable_request[0]->addAttribute('ETag', $ETag);
             print_r ($this->xml_content);
             file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
+            return FALSE;
         }
     }
 

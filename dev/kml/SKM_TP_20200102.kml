@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+	<SimpleField name="id" type="int"/>
+	<SimpleField name="datemin" type="string"/>
+	<SimpleField name="date" type="string"/>
+	<SimpleField name="lon" type="float"/>
+	<SimpleField name="lat" type="float"/>
+</Schema>
+<Folder><name>2020/01/02</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294907</SimpleData>
+		<SimpleData name="datemin">2020/01/01 13:22:44</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">108.679204614972</SimpleData>
+		<SimpleData name="lat">59.596758380497</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>108.6388442,59.59334285 108.67296696,59.60237806 108.70756067,59.6115229 108.71965382,59.60021781 108.68513054,59.59106821 108.65083456,59.58196543 108.6388442,59.59334285</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294908</SimpleData>
+		<SimpleData name="datemin">2020/01/01 14:58:01</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">95.7935975091699</SimpleData>
+		<SimpleData name="lat">56.1361498684583</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>95.78251217,56.13915019 95.7994761,56.14214282 95.80467465,56.13314862 95.78773166,56.13015504 95.78251217,56.13915019</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294909</SimpleData>
+		<SimpleData name="datemin">2020/01/01 14:58:01</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">106.034205457439</SimpleData>
+		<SimpleData name="lat">55.4376328303778</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>106.01202765,55.44089897 106.03274205,55.44279492 106.05364283,55.44470608 106.05664089,55.4344032 106.03565065,55.43249299 106.01447559,55.43056373 106.01202765,55.44089897</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294910</SimpleData>
+		<SimpleData name="datemin">2020/01/01 18:17:27</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">50.1962078648019</SimpleData>
+		<SimpleData name="lat">61.1269337638334</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>50.17433067,61.12909839 50.19385045,61.13146731 50.21339407,61.13383528 50.21805678,61.12475732 50.1985398,61.12239697 50.17904287,61.12003472 50.17433067,61.12909839</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294911</SimpleData>
+		<SimpleData name="datemin">2020/01/01 18:17:27</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">51.3776147247737</SimpleData>
+		<SimpleData name="lat">46.9992025819396</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>51.36200664,47.00140993 51.37596652,47.00376074 51.38991783,47.00610774 51.39321855,46.99699647 51.37927486,46.99464662 51.3653245,46.99229391 51.36200664,47.00140993</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294912</SimpleData>
+		<SimpleData name="datemin">2020/01/01 18:17:27</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">51.4366441266993</SimpleData>
+		<SimpleData name="lat">46.9994569885444</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>51.42108961,47.00166935 51.43500468,47.00400871 51.44890258,47.00634331 51.45220331,46.99724918 51.43830541,46.99490982 51.42438938,46.99256665 51.42108961,47.00166935</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294913</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:55:20</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">21.938264992426</SimpleData>
+		<SimpleData name="lat">41.4459055470441</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>21.948165966053,41.4444623985403 21.95192578,41.43498375 21.92362357,41.42851001 21.9194436143773,41.4377295707782 21.91365436,41.43637221 21.90836016,41.44924296 21.93650261,41.45581582 21.96474149,41.4624048 21.96998097,41.44957213 21.948165966053,41.4444623985403</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294915</SimpleData>
+		<SimpleData name="datemin">2020/01/01 17:25:26</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">126.763577479023</SimpleData>
+		<SimpleData name="lat">52.6388263634906</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>126.74529526,52.63469471 126.745673871497,52.6361760318704 126.74084738,52.63666691 126.7434971,52.6467918 126.76275178,52.64482438 126.78193781,52.64285887 126.78158461526,52.6415118081986 126.78634006,52.64104402 126.78378171,52.63092864 126.76458426,52.63281024 126.74529526,52.63469471</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294917</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:02:39</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">108.692867677517</SimpleData>
+		<SimpleData name="lat">59.6044046575171</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>108.68153247,59.60108892 108.68589537,59.61005171 108.70420214,59.60771902 108.69984305,59.59875908 108.68153247,59.60108892</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294918</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:02:39</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">107.759025976521</SimpleData>
+		<SimpleData name="lat">59.490473577201</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>107.74758178,59.48703157 107.75160775,59.49619423 107.77053618,59.49389303 107.76637125,59.48475226 107.74758178,59.48703157</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294919</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:02:39</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">107.105661665799</SimpleData>
+		<SimpleData name="lat">58.1403924519409</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>107.09466372,58.13691674 107.09856406,58.14606132 107.11664768,58.14386977 107.11277589,58.13472615 107.09466372,58.13691674</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294920</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:02:39</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">108.074415999303</SimpleData>
+		<SimpleData name="lat">58.0189855094215</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>108.06381625,58.01562919 108.06781558,58.02457295 108.08501037,58.0223423 108.08102437,58.0133995 108.06381625,58.01562919</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294921</SimpleData>
+		<SimpleData name="datemin">2020/01/01 19:02:39</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">106.043150232774</SimpleData>
+		<SimpleData name="lat">55.4318922593282</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>106.032997,55.42837576 106.036549,55.43746989 106.05340204,55.43537376 106.04964066,55.42631103 106.032997,55.42837576</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294922</SimpleData>
+		<SimpleData name="datemin">2020/01/01 20:40:20</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">97.3607400560815</SimpleData>
+		<SimpleData name="lat">60.8405499405654</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>97.3424264,60.83862082 97.35230193,60.8487086 97.37932824,60.84237351 97.36881311,60.83242089 97.3424264,60.83862082</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294923</SimpleData>
+		<SimpleData name="datemin">2020/01/01 22:18:52</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">61.1976747438375</SimpleData>
+		<SimpleData name="lat">57.9427025911585</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>61.18720132,57.9395963 61.19178122,57.94828974 61.20815104,57.94580733 61.20356542,57.9371158 61.18720132,57.9395963</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294924</SimpleData>
+		<SimpleData name="datemin">2020/01/02 02:50:22</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">111.223846121603</SimpleData>
+		<SimpleData name="lat">52.5307048803635</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>111.20048108,52.52400846 111.20209147,52.53893978 111.24715506,52.53739483 111.24569125,52.52249112 111.20048108,52.52400846</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294925</SimpleData>
+		<SimpleData name="datemin">2020/01/02 04:27:16</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">108.681170609388</SimpleData>
+		<SimpleData name="lat">59.598909450078</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>108.66483601,59.59167626 108.67156982,59.60075855 108.67828841,59.6098456 108.69745148,59.60619399 108.6907692,59.59709549 108.68419732,59.58797795 108.66483601,59.59167626</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294926</SimpleData>
+		<SimpleData name="datemin">2020/01/02 04:33:32</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">111.207906976627</SimpleData>
+		<SimpleData name="lat">52.526427568677</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>111.221081075075,52.5314755247383 111.22459298,52.53235734 111.23287525,52.52008621 111.20101123,52.5120611 111.194768408662,52.5213313357545 111.19126618,52.52043235 111.18296677,52.53272157 111.21467486,52.54083744 111.221081075075,52.5314755247383</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294928</SimpleData>
+		<SimpleData name="datemin">2020/01/02 09:22:36</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">17.9079810144241</SimpleData>
+		<SimpleData name="lat">44.2162918032471</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>17.89877605,44.21213586 17.90084852,44.22217509 17.91733864,44.22039368 17.91495113,44.21039727 17.89877605,44.21213586</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="id">2294929</SimpleData>
+		<SimpleData name="datemin">2020/01/02 09:22:36</SimpleData>
+		<SimpleData name="date">2020/01/02</SimpleData>
+		<SimpleData name="lon">20.9806018130272</SimpleData>
+		<SimpleData name="lat">44.5974426846074</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>20.97304146,44.59380194 20.97534426,44.60280756 20.98816259,44.60108236 20.98585979,44.59207865 20.97304146,44.59380194</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  <name>2020/01/01 13:22:44</name></Placemark>
+</Folder>
+</Document></kml>

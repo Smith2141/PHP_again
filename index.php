@@ -82,5 +82,5 @@ if (!is_file('log/json_log.xml')) {
 }
 ?> -->
 <?php
-    phpinfo();
+phpinfo();
 ?>
