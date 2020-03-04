@@ -82,5 +82,6 @@ if (!is_file('log/json_log.xml')) {
 }
 ?> -->
 <?php
+echo date('Ymd H:i:s');
 phpinfo();
 ?>

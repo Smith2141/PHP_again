@@ -1,0 +1,101 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'bz2' (tried: \xampp\php\ext\bz2 (The specified module could not be found.), \xampp\php\ext\php_bz2.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'curl' (tried: \xampp\php\ext\curl (The specified module could not be found.), \xampp\php\ext\php_curl.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'fileinfo' (tried: \xampp\php\ext\fileinfo (The specified module could not be found.), \xampp\php\ext\php_fileinfo.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'gd2' (tried: \xampp\php\ext\gd2 (The specified module could not be found.), \xampp\php\ext\php_gd2.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'gettext' (tried: \xampp\php\ext\gettext (The specified module could not be found.), \xampp\php\ext\php_gettext.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'mbstring' (tried: \xampp\php\ext\mbstring (The specified module could not be found.), \xampp\php\ext\php_mbstring.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'exif' (tried: \xampp\php\ext\exif (The specified module could not be found.), \xampp\php\ext\php_exif.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'mysqli' (tried: \xampp\php\ext\mysqli (The specified module could not be found.), \xampp\php\ext\php_mysqli.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'pdo_mysql' (tried: \xampp\php\ext\pdo_mysql (The specified module could not be found.), \xampp\php\ext\php_pdo_mysql.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \xampp\php\ext\pdo_sqlite (The specified module could not be found.), \xampp\php\ext\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: \xampp\php\ext\php_openssl.dll (The specified module could not be found.), \xampp\php\ext\php_php_openssl.dll.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'php_ftp.dll' (tried: \xampp\php\ext\php_ftp.dll (The specified module could not be found.), \xampp\php\ext\php_php_ftp.dll.dll (The specified module could not be found.)) in Unknown on line 0
+
+Warning: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown on line 0
+<i>Файл SKM_TP_20200304.json найден</i>1efb7-5a006f8a47a17<h3>Содержимое лог-файла успешно прочитано!</h3><p><u>Дописывание дня выполняется:</u></p>
+Warning: file_put_contents(log/json_log.xml): failed to open stream: Permission denied in D:\!_Mchs\class_save_json.php on line 55
+<p><u>Дописывание запроса record выполняется:</u></p>SimpleXMLElement Object
+(
+    [year] => SimpleXMLElement Object
+        (
+            [@attributes] => Array
+                (
+                    [current_year] => 2020
+                )
+
+            [month] => SimpleXMLElement Object
+                (
+                    [@attributes] => Array
+                        (
+                            [current_month] => 202003
+                        )
+
+                    [day] => Array
+                        (
+                            [0] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [current_day] => 20200303
+                                        )
+
+                                    [request] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [event] => record
+                                                    [ETag] => 147f3-59ff20445db8d
+                                                    [filename] => SKM_TP_20200303.json
+                                                    [Content-Length] => 83955
+                                                    [Last-Modified] => Tue, 03 Mar 2020 11:58:06 GMT
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [current_day] => 20200304
+                                        )
+
+                                    [request] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [event] => record
+                                                    [time] => 20200304 14:21:00
+                                                    [ETag] => 1efb7-5a006f8a47a17
+                                                    [filename] => SKM_TP_20200304.json
+                                                    [Content-Length] => 126903
+                                                    [Last-Modified] => Wed, 04 Mar 2020 12:58:05 GMT
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Warning: file_put_contents(log/json_log.xml): failed to open stream: Permission denied in D:\!_Mchs\class_save_json.php on line 89
+<h3>Содержимое  kml файла успешно прочитано!</h3>Файл успешно обработан и обновлён

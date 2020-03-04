@@ -3,12 +3,7 @@
     <year current_year="2020">
         <month current_month="202003">
             <day current_day="20200303">
-                <request event="record" ETag="5e566215-13ff" filename="SKM_TP_20200109.json" Content-Length="5119" Last-Modified="Wed, 26 Feb 2020 12:18:29 GMT"/>
-                <request event="record" ETag="5e566215-2e7d" filename="SKM_TP_20200105.json" Content-Length="11901" Last-Modified="Wed, 26 Feb 2020 12:18:29 GMT"/>
-                <request event="record" ETag="5e566215-13ff" filename="SKM_TP_20200109.json" Content-Length="5119" Last-Modified="Wed, 26 Feb 2020 12:18:29 GMT"/>
-                <request event="unchanged" ETag="5e566215-13ff"/>
-                <request event="record" ETag="5e566215-2a4d" filename="SKM_TP_20200102.json" Content-Length="10829" Last-Modified="Wed, 26 Feb 2020 12:18:29 GMT"/>
-                <request event="unchanged" ETag="5e566215-2a4d"/>
+                <request event="record" ETag="147f3-59ff20445db8d" filename="SKM_TP_20200303.json" Content-Length="83955" Last-Modified="Tue, 03 Mar 2020 11:58:06 GMT"/>
             </day>
         </month>
     </year>

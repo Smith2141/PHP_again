@@ -2,20 +2,21 @@
 $current_date =  date("Ymd");
 $current_filename = "SKM_TP_$current_date.json";//формирование актуального имени файла
 $current_filename = "SKM_TP_20200102.json";//тестовое имя файла
-$url = "http://172.17.188.163/share/$current_filename";
-// $url = "http://10.19.206.50/share/$current_filename";//сервер МЧС
+// $url = "http://172.17.188.163/share/$current_filename";
+$url = "http://10.19.206.50/share/$current_filename";//сервер МЧС
 //TODO: допилить условие проверок наличия и времени редактирования файла
 // FIXME:
 $Headers = get_headers($url, 1);//чтение заголовков для проверки наличия файла
 foreach ($Headers as $key => $value) {
     echo "$key => $value<br>";
 }
-echo '<h3>TEST</h3>';
-echo trim($Headers['Last-Modified'], '""');
-echo $Headers['Last-Modified'];
-echo '<h3>TEST</h3>';
+// echo '<h3>TEST</h3>';
+// echo trim($Headers['Last-Modified'], '""');
+// echo $Headers['Last-Modified'];
+// echo '<h3>TEST</h3>';
 $file_content = file_get_contents($url);//получить содержимое файла
-$dir_to_record = dirname(__FILE__);//директория запуска скрипта
+echo $file_content;
+// $dir_to_record = dirname(__FILE__);//директория запуска скрипта
 // file_put_contents("$dir_to_record/$current_filename", $file_content);//save file
 ?>
 <!--TODO: Сделать проверки существования папок input и output рядом с main.php

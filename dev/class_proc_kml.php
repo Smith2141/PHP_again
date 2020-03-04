@@ -1,4 +1,5 @@
 <?php
+require_once("vendor/autoload.php");
 class KmlProcessing {
     public $kml_path;
     public function __construct($kml_path) {

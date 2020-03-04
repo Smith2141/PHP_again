@@ -10,7 +10,7 @@ class SaveAndLog {
         if (file_exists($this->log_file)) {
             // $this->xml_content = simplexml_load_file($this->log_file);
             $this->xml_content = new SimpleXMLElement($this->log_file, NULL, TRUE);
-            print_r($this->xml_content);
+            // print_r($this->xml_content);
             print_r('<h3>Содержимое лог-файла успешно прочитано!</h3>');
         } else {
             exit("Не удалось открыть файл $this->log_file.");
@@ -23,7 +23,7 @@ class SaveAndLog {
             echo "<p><u>Дописывание года выполняется:</u></p>";
             $new_year = $this->xml_content->addChild('year');//добавление нового года
             $new_year->addAttribute('current_year', date('Y'));//добавление аттрибута нового года ВАЖНО ->
-            print_r ($this->xml_content);
+            // print_r ($this->xml_content);
         }
     }
     public function check_the_current_month() {
@@ -36,7 +36,7 @@ class SaveAndLog {
             foreach ($verifiable_year as $year) {
                 if ((string) $year['current_year'] == $current_year) {
                     $year->addChild('month')->addAttribute('current_month', date('Ym'));
-                    print_r ($this->xml_content);
+                    // print_r ($this->xml_content);
                 }
             }
         }
@@ -51,7 +51,7 @@ class SaveAndLog {
             foreach ($verifiable_month as $month) {
                 if ((string) $month['current_month'] == $current_month) {
                     $month->addChild('day')->addAttribute('current_day', date('Ymd'));
-                    print_r ($this->xml_content);
+                    // print_r ($this->xml_content);
                     file_put_contents($this->log_file, $this->xml_content->asXML());//save file
                 }
             }
@@ -62,7 +62,7 @@ class SaveAndLog {
         $current_day = date('Ymd');
         $verifiable_day = $this->xml_content->xpath("//day[@current_day=$current_day]");
         $verifiable_day_expr = $this->xml_content->xpath("//day[last()]");
-        $verifiable_request = $this->xml_content->xpath("//request[last()]");
+        $verifiable_request = $this->xml_content->xpath("//day[last()]/request[last()]");//сверяемое событие
         $Headers = get_headers($url, 1);//чтение заголовков для проверки наличия файла
         $ETag = trim($Headers['ETag'], '""');//значение атрибута ETag
         $ContentLength = $Headers['Content-Length'];//значение атрибута длины файла
@@ -78,7 +78,8 @@ class SaveAndLog {
                     file_put_contents("in/$current_filename", $file_content);//save json file
                     //добавление события в лог
                     $day->addChild('request')->addAttribute('event', 'record');
-                    $verifiable_request = $this->xml_content->xpath("//request[last()]");
+                    $verifiable_request = $this->xml_content->xpath("//day[last()]/request[last()]");
+                    $verifiable_request[0]->addAttribute('time', date('Ymd H:i:s'));
                     $verifiable_request[0]->addAttribute('ETag', $ETag);
                     $verifiable_request[0]->addAttribute('filename', $current_filename);
                     $verifiable_request[0]->addAttribute('Content-Length', $ContentLength);
@@ -94,6 +95,7 @@ class SaveAndLog {
             $verifiable_day_expr[0]->addChild('request');
             $verifiable_request = $this->xml_content->xpath("//request[last()]");
             $verifiable_request[0]->addAttribute('event', 'unchanged');
+            $verifiable_request[0]->addAttribute('time', date('Ymd H:i:s'));
             $verifiable_request[0]->addAttribute('ETag', $ETag);
             print_r ($this->xml_content);
             file_put_contents($this->log_file, $this->xml_content->asXML());//save log file

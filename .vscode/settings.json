@@ -2,5 +2,7 @@
     "files.autoGuessEncoding": true,
     "editor.rulers": [
         100
-    ]
+    ],
+    "composer.executablePath": "C:\\ProgramData\\ComposerSetup\\bin\\composer.bat",
+    "composer.workingPath": "C:\\Users\\Berezovskiy_MA\\Documents\\PHP_again\\dev\\composer_dir"
 }

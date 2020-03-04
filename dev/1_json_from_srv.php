@@ -56,7 +56,7 @@ if ($new_json_receive) {//Проверка на успешное получен�
     $ogr_path = "ogr2ogr\\ogr2ogr.exe";
     $command =  "$ogr_path -f KML $current_kml_path $current_json_path";
     system($command);
-    sleep(2);
+    sleep(60);
     if (!is_file($current_kml_path)) {//Правка тегов kml файла
         echo "<i>Запрашиваемый файл:<br>$current_kml_path<br><b>не найден</b></i>";
     } else {

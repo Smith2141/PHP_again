@@ -1,0 +1,48 @@
+Usage
+All composer commands are available through the Command Pallet using F1.
+
+Supported Commands
+Composer: About
+Display short information about composer.
+
+Composer: Archive
+Create an archive of this composer package.
+
+Composer: Clear Cache
+Clears composer's internal package cache.
+
+Composer: Diagnose
+Diagnoses the system to identify common errors.
+
+Composer: Dump Autoloader
+Dumps the autoloader.
+
+Composer: Install
+Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json.
+
+Composer: Remove
+Removes a package from the require or require-dev.
+
+Composer: Require
+Adds required packages to your composer.json and installs them.
+
+Composer: Run Script
+Run the scripts defined in composer.json.
+
+Composer: Self Update
+Updates composer.phar to the latest version.
+
+Composer: Show
+Show information about packages.
+
+Composer: Status
+Show a list of locally modified packages.
+
+Composer: Update
+Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+
+Composer: Validate
+Validates a composer.json and composer.lock
+
+Composer: Version
+Shows the composer version.
