@@ -3,7 +3,7 @@ require_once 'class_save_json.php';
 require_once 'class_proc_kml.php';
 
 $current_date =  date("Ymd");//актуальная дата
-$current_date =  "20200102";//FIXME:тестовая дата
+$current_date =  "20200104";//FIXME:тестовая дата, закомментить для выполнения на сервере
 $current_json_filename = "SKM_TP_$current_date.json";//формирование актуального имени json
 $url = "http://172.17.188.163/share/$current_json_filename";
 // $url = "http://10.19.206.50/share/$filename";//сервер МЧС
@@ -25,7 +25,7 @@ if (!is_dir('log')) {//проверка и создание директории
 if (!is_dir('kml')) {//проверка и создание директории для kml
     mkdir('kml', 0777, true);
 }
-if (!is_file($log_path)) {
+if (!is_file($log_path)) {//TODO: сделать проверку на пустоту файла
     $log = xmlwriter_open_memory();
     xmlwriter_set_indent($log, 2);
     $res = xmlwriter_set_indent_string($log, ' ');
@@ -51,9 +51,10 @@ if ($check_file) {//если запрашиваемый json есть на се�
 if ($new_json_receive) {//Проверка на успешное получение json
     $current_kml_filename = "SKM_TP_$current_date.kml";//формирование актуального имени kml
     //Конвертирование kml
-    $current_kml_path = "kml\\$current_kml_filename";
-    $current_json_path = "in\\$current_json_filename";
+    $current_kml_path = __DIR__ . "\\kml\\$current_kml_filename";
+    $current_json_path = __DIR__ . "\\in\\$current_json_filename";
     $ogr_path = "ogr2ogr\\ogr2ogr.exe";
+    $ogr_path = "ogr2ogr";//FIXME: закомментить для выполнения на сервере
     $command =  "$ogr_path -f KML $current_kml_path $current_json_path";
     system($command);
     sleep(60);

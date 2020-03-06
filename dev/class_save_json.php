@@ -8,8 +8,8 @@ class SaveAndLog {
     }
     public function open_xml_log() {
         if (file_exists($this->log_file)) {
-            // $this->xml_content = simplexml_load_file($this->log_file);
-            $this->xml_content = new SimpleXMLElement($this->log_file, NULL, TRUE);
+            $this->xml_content = simplexml_load_file($this->log_file);
+            // $this->xml_content = new SimpleXMLElement($this->log_file, NULL, TRUE);//FIXME:закоментил 06.03.2020
             // print_r($this->xml_content);
             print_r('<h3>Содержимое лог-файла успешно прочитано!</h3>');
         } else {
@@ -52,7 +52,7 @@ class SaveAndLog {
                 if ((string) $month['current_month'] == $current_month) {
                     $month->addChild('day')->addAttribute('current_day', date('Ymd'));
                     // print_r ($this->xml_content);
-                    file_put_contents($this->log_file, $this->xml_content->asXML());//save file
+                    // file_put_contents($this->log_file, $this->xml_content->asXML());//FIXME:закомментил 06.03.2020
                 }
             }
     
@@ -85,7 +85,8 @@ class SaveAndLog {
                     $verifiable_request[0]->addAttribute('Content-Length', $ContentLength);
                     $verifiable_request[0]->addAttribute('Last-Modified', $LastModified);
                     print_r ($this->xml_content);
-                    file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
+                    // file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
+                    $this->xml_log_formatter();
                     return TRUE;
                 }
             }
@@ -98,10 +99,17 @@ class SaveAndLog {
             $verifiable_request[0]->addAttribute('time', date('Ymd H:i:s'));
             $verifiable_request[0]->addAttribute('ETag', $ETag);
             print_r ($this->xml_content);
-            file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
+            // file_put_contents($this->log_file, $this->xml_content->asXML());//save log file
+            $this->xml_log_formatter();
             return FALSE;
         }
     }
-
+    protected function xml_log_formatter() {
+        $dom = new DOMDocument('1.0', 'UTF-8');
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput = true;
+        $dom->loadXML($this->xml_content->saveXML());
+        file_put_contents($this->log_file, $dom->saveXML());
+    }
 }
 ?>
